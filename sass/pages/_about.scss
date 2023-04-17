@@ -1,0 +1,28 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+#about-1{
+  padding: 170px 0 100px;
+}
+.a1-container{
+  max-width: 720px;
+  position: relative;
+  .a1-content{
+    *{
+      margin-top: 30px;
+    }
+    p{
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+      color: #242424;
+      opacity: 0.8;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}

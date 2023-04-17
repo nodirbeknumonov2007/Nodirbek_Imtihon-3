@@ -1,0 +1,134 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+#navbar{
+  height: 100px;
+  transition: 0.4s;
+}
+#navbar.navbar-shrink{
+  height: 70px;
+  box-shadow: -1px 7px 10px 0px rgb(239, 101, 101);
+}
+header{
+  display: flex;
+  align-items: center;
+  background-color: $primary-red !important;
+}
+// OFF CANVAS START
+#nav-1{
+  display: none;
+  @media(max-width:768px){
+    display: block;
+  }
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: $primary-red!important;
+}
+.offcanvas{
+  background-color: $primary-red;
+  .login{
+    width: 50%;border: 1px solid white;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 20px;
+    a{
+      padding-left: 0;
+    }
+  }
+}
+.navbar-toggler{
+  color: white;
+  border: none;
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+}
+.navbar-toggler-icon {
+  background-image: none;
+  i{
+    padding-top: 2px;
+    display: block;
+    transform: scale(2.5);
+  }
+}
+.canvas{
+  li{
+    transition: 0.4s;
+    padding-left: 10px;
+    border-radius: 15px;
+    &:hover{
+      background-color: rgb(255, 0, 0);
+    }
+  }
+}
+.btn-close {
+    --bs-btn-close-color: #fff;
+    --bs-btn-close-bg: none;
+    --bs-btn-close-opacity: 1;
+    --bs-btn-close-hover-opacity: 0.9;
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-btn-close-focus-opacity: 1;
+    --bs-btn-close-disabled-opacity: 0.25;
+    --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+    &:focus {
+    outline: 0;
+    box-shadow: none;
+    opacity: 1;
+}
+    i{
+      display: block;
+      padding-top: 2px;
+      margin-left: -20px;
+      transform: scale(2.5);
+    }
+}
+
+// OFF CANVAS END
+
+// NAVBAR-2 START//
+
+.nav-2{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  @media(max-width:768px){
+    display: none;
+  }
+  .nav-menus{
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 0;
+      li{
+        a{
+          position: relative;
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.04em; 
+          color: #FFFFFF;
+          transition: 0.3s;
+        }
+      }
+      .login-2{
+        padding: 10px 40px;
+        border: 1px solid #FFFFFF;
+        border-radius: 100px;
+        transition: 0.4s;
+        &:hover{
+          background-color: red;
+          border-color: red;
+        }
+      }
+    }
+  }
+}
+
+
+// NAVBAR-2 END //

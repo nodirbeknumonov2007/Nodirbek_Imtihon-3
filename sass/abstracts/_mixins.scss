@@ -1,0 +1,40 @@
+@use "variables";
+
+@function calculateRem($size) {
+  @return calc($size / $rem-base) * 1rem;
+}
+
+@mixin label($body) {
+  $font-sizes: (
+    body1: 16px,
+    body2: 16px,
+  );
+
+  $line-heights: (
+    body1: 28px,
+    body2: 28px,
+  );
+
+  font-weight: 400;
+  font-size: calculateRem(map-get($font-sizes, $label));
+  line-height: calculateRem(map-get($line-heights, $label));
+  color: $dark;
+}
+
+@mixin button($background-color, $text-color, $padding-y, $padding-x) {
+  display: inline-block;
+  padding: $padding-y $padding-x;
+  border-radius: 40px;
+  background-color: $background-color;
+  color: $text-color;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background: #fde4a6;
+    color: #1b1c2b;
+  }
+}

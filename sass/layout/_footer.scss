@@ -1,0 +1,166 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+// -----FOOTER-1 START
+
+#footer-1 {
+  background-color: $white;
+  margin-bottom: -220px;
+  z-index: 1;
+}
+
+.f1-container {
+  position: relative;
+  background-color: $primary-red;
+  box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+  border-radius: 20px;
+  padding: 64px 20px;
+  text-align: center;
+  margin-top: 120px;
+  h5 {
+    font-family: "Cera Round Pro";
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: $white;
+    text-align: center;
+  }
+  h1 {
+    font-family: "Cera Round Pro";
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $white;
+    margin: 25px 0;
+    text-align: center;
+  }
+  p {
+    font-family: "Cera Round Pro";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 64px;
+    color: #ffffff;
+  }
+  .inputBox {
+    position: relative;
+    display: inline-block;
+    margin-right: 32px;
+    width: 50%;
+    @media(max-width:578px){
+      display: block;
+      width: 100%;
+      margin: 0 0 20px;
+    }
+    label {
+      position: absolute;
+      left: 15px;
+      top: 8.7px;
+      padding: 0 25px 0 10px;
+      font-size: 18px;
+      transition: 0.3s;
+      color: #aaaaaa;
+      background-color: $primary-red;
+      font-family: "Cera Round Pro";
+      @media(max-width:768px){
+        top: 8px;
+      }
+      @media(max-width:578px){
+        top: 7.5px;
+      }
+    }
+    input {
+      border: 1px solid rgba(245, 239, 219, 0.5);
+      border-radius: 100px;
+      padding: 12px 20px;
+      outline: none;
+      width: 100%;
+      color: #ffffff;
+      background-color: $primary-red;
+      &:focus ~ label {
+        top: -11px;
+        color: $primary-red;
+        background-color: white;
+        font-size: 12px;
+        padding: 0 10px;
+        border-radius: 10px;
+        border: 0.5px solid $white;
+      }
+      &::placeholder {
+        font-size: 16px;
+        opacity: 0;
+        font-family: "Cera Round Pro";
+        transition: 0.5s;
+        color: white;
+        font-weight: 400;
+        line-height: 175%;
+        letter-spacing: 0.04em;
+      }
+      &:focus::placeholder {
+        opacity: 1;
+      }
+      &:focus {
+        outline: 1px solid white;
+      }
+    }
+  }
+  a {
+    font-family: "Cera Round Pro";
+    color: $white;
+    padding: 12px 32px;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    transition: 0.4s;
+    &:hover{
+      background-color: #ff0000;
+      border-color: #ff0000;
+    }
+    @media(max-width:578px){
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+#footer-2{
+  background-color: $primary-red;
+  padding: 292px 0 40px;
+  font-family: "Cera Round Pro";
+}
+.f2-container{
+  & *{
+    color: white;
+  }
+  p{
+    margin-top: 32px;
+  }
+  .f2-main{
+    .center{
+      img{
+        max-width: 336px;
+        width: 100%;
+      }
+      p{
+        margin: 32px auto 47px;
+        max-width: 438px;
+      }
+      .f-media{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      @media(max-width:576px){
+        margin: 40px auto;
+      }
+    }
+    
+  }
+  .f2-bottom{
+      margin-top: 80px;
+    }
+}

@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/components/loader.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="scene">
+        <div class="cube-wrapper">
+          <div class="cube">
+            <div class="cube-faces">
+              <div class="cube-face shadow"></div>
+              <div class="cube-face bottom"></div>
+              <div class="cube-face top"></div>
+              <div class="cube-face left"></div>
+              <div class="cube-face right"></div>
+              <div class="cube-face back"></div>
+              <div class="cube-face front"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backtop"><a href="#"><img width="80px" src="./assets/images/home/giphy.gif" alt=""></a></div>
+    <header id="navbar" class="fixed-top">
+      <div class="container">
+        <nav id="nav-1" class="navbar fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/images/home/image 2.svg" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="bi bi-list"></i
+              ></span>
+            </button>
+            <div
+              class="offcanvas text-white offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Nodirbek
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+              <div class="canvas offcanvas-body text-white">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      target="_blank"
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="./menu.html"
+                      >Menus</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      target="_blank"
+                      class="nav-link text-white"
+                      href="./news.html"
+                      >News</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      target="_blank"
+                      class="nav-link text-white"
+                      href="./about.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      target="_blank"
+                      class="nav-link text-white"
+                      href="./contact.html"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="nav-item login">
+                    <a target="_blank" class="nav-link text-white" href="#"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-light" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="nav-2">
+          <div class="nav-logo">
+            <a href="#"
+              ><img src="./assets/images/home/image 2.svg" alt=""
+            /></a>
+          </div>
+          <div class="nav-menus">
+            <ul class="menu">
+              <li><a class="hover" target="_blank" href="./menu.html">Menu</a></li>
+              <li><a class="hover" target="_blank" href="./news.html">News</a></li>
+              <li><a class="hover" target="_blank" href="./about.html">About Us</a></li>
+              <li><a class="hover" target="_blank" href="./contact.html">Contact Us</a></li>
+              <div><li><a class="login-2" href="#">Log in</a></li></div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="section-1">
+        <div class="container sec1-contanier">
+          <div class="sec1-content">
+            <h3>Chase the new Flavour</h3>
+            <h1>The key to Fine dining</h1>
+            <p>
+              Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+              volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+              aliquam amet tellus
+            </p>
+            <a target="_blank" href="./menu.html">Explore Menu</a>
+          </div>
+          <div class="sec1-img">
+            <img src="./assets/images/home/sec1-img.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="section-2">
+        <div class="container sec2-container">
+          <h1>Popular Dishes</h1>
+          <div class="owl-carousel owl-theme sec2-slide gy-4">
+            <div class="slide-card">
+              <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+              <div class="card-content">
+                <p>Barbecue Shish kebab Shashlik Skewer</p>
+                <img src="./assets/images/home/Group 134.svg" alt="" />
+                <h2>$12.00</h2>
+              </div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+              <div class="card-content">
+                <p>Barbecue Shish kebab Shashlik Skewer</p>
+                <img src="./assets/images/home/Group 134.svg" alt="" />
+                <h2>$12.00</h2>
+              </div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+              <div class="card-content">
+                <p>Barbecue Shish kebab Shashlik Skewer</p>
+                <img src="./assets/images/home/Group 134.svg" alt="" />
+                <h2>$12.00</h2>
+              </div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/klipartz 1.png" alt="" />
+              <div class="card-content">
+                <p>Barbecue Shish kebab Shashlik Skewer</p>
+                <img src="./assets/images/home/Group 134.svg" alt="" />
+                <h2>$12.00</h2>
+              </div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+              <div class="card-content">
+                <p>Barbecue Shish kebab Shashlik Skewer</p>
+                <img src="./assets/images/home/Group 134.svg" alt="" />
+                <h2>$12.00</h2>
+              </div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+              <div class="card-content">
+                <p>Barbecue Shish kebab Shashlik Skewer</p>
+                <img src="./assets/images/home/Group 134.svg" alt="" />
+                <h2>$12.00</h2>
+              </div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+              <div class="card-content">
+                <p>Barbecue Shish kebab Shashlik Skewer</p>
+                <img src="./assets/images/home/Group 134.svg" alt="" />
+                <h2>$12.00</h2>
+              </div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/klipartz 1.png" alt="" />
+              <div class="card-content">
+                <p>Barbecue Shish kebab Shashlik Skewer</p>
+                <img src="./assets/images/home/Group 134.svg" alt="" />
+                <h2>$12.00</h2>
+              </div>
+            </div>
+          </div>
+          <img class="yoqimsiz" src="./assets/images/home/Group 86.png" alt="">
+        </div>
+      </section>
+      <section id="section-3">
+        <div class="container sec3-container">
+          <h1>Our Regular Menu Pack</h1>
+          <div class="tab-block" id="tab-block">
+            <ul class="tab-mnu">
+              <li class="active">All</li>
+              <li>Shawarma</li>
+              <li>Turk Kebab</li>
+              <li>Hamburger Kebab</li>
+              <li>Doner kebab</li>
+              <li>Shish kebab</li>
+              <li>French fries Pizza</li>
+              <li>Desserts</li>
+            </ul>
+
+            <div class="tab-cont">
+              <div class="tab-pane tab-container">
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane tab-container">
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane tab-container">
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane tab-container">
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane tab-container">
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane tab-container">
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane tab-container">
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane tab-container">
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (2).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1 (1).png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+                <div class="slide-card">
+                  <img src="./assets/images/home/klipartz 1.png" alt="" />
+                  <div class="card-content">
+                    <p>Barbecue Shish kebab Shashlik Skewer</p>
+                    <img src="./assets/images/home/Group 134.svg" alt="" />
+                    <h2>$12.00</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-4">
+        <div class="container sec4-container">
+          <div class="top-title">
+            <h2>Testimony</h2>
+            <img src="./assets/images/home/Vector (10).png" alt="" />
+            <h1>Happy customers</h1>
+          </div>
+          <div class="sec4-slide owl-carousel">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nodirbek</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisq...
+                </p>
+                <a href="#" class="card-link">📅 06/02/2022</a>
+                <a href="#" class="card-link">⏱11:15</a>
+                <a href="#" class="card-link">👁222</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nodirbek</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisq...
+                </p>
+                <a href="#" class="card-link">📅 06/02/2022</a>
+                <a href="#" class="card-link">⏱11:15</a>
+                <a href="#" class="card-link">👁222</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nodirbek</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisq...
+                </p>
+                <a href="#" class="card-link">📅 06/02/2022</a>
+                <a href="#" class="card-link">⏱11:15</a>
+                <a href="#" class="card-link">👁222</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nodirbek</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisq...
+                </p>
+                <a href="#" class="card-link">📅 06/02/2022</a>
+                <a href="#" class="card-link">⏱11:15</a>
+                <a href="#" class="card-link">👁222</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nodirbek</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisq...
+                </p>
+                <a href="#" class="card-link">📅 06/02/2022</a>
+                <a href="#" class="card-link">⏱11:15</a>
+                <a href="#" class="card-link">👁222</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nodirbek</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisq...
+                </p>
+                <a href="#" class="card-link">📅 06/02/2022</a>
+                <a href="#" class="card-link">⏱11:15</a>
+                <a href="#" class="card-link">👁222</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nodirbek</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisq...
+                </p>
+                <a href="#" class="card-link">📅 06/02/2022</a>
+                <a href="#" class="card-link">⏱11:15</a>
+                <a href="#" class="card-link">👁222</a>
+              </div>
+            </div>
+          </div>
+          <img class="yoqimsiz y-2" src="./assets/images/home/Group 86.png" alt="">
+        </div>
+      </section>
+      <section id="section-5">
+        <div class="container sec5-container">
+          <div class="top-title">
+            <h2>News</h2>
+            <img src="./assets/images/home/Vector (10).png" alt="" />
+            <h1>Gerícht updates</h1>
+          </div>
+          <div class="sec5-cards">
+            <div class="card s5-card">
+              <img
+                src="./assets/images/home/paul-hermann-jeiqzOgwwKU-unsplash 2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Tips For Prepping And Caring For Your Grill
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <div class="card-bottom">
+                  <a href="#" class="btn btn-outline-danger">Read More</a>
+                  <span>18 Apr 2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="card s5-card keraksiz">
+              <img
+                src="./assets/images/home/paul-hermann-jeiqzOgwwKU-unsplash 2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Tips For Prepping And Caring For Your Grill
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <div class="card-bottom">
+                  <a href="#" class="btn btn-outline-danger">Read More</a>
+                  <span>18 Apr 2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="card s5-card keraksiz">
+              <img
+                src="./assets/images/home/paul-hermann-jeiqzOgwwKU-unsplash 2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Tips For Prepping And Caring For Your Grill
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                  in.
+                </p>
+                <div class="card-bottom">
+                  <a href="#" class="btn btn-outline-danger">Read More</a>
+                  <span>18 Apr 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-6">
+        <div
+          class="sec-6"
+        >
+          <div
+            class="video"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img src="./assets/images/home/Play.png" alt=""/>
+          </div>
+
+          <img
+            width="100%"
+            text-center
+            src="./assets/images/home/section6.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section id="section-7">
+        <div class="sec7-container">
+          <div class="sec7-content">
+            <h2>Telegram</h2>
+            <img src="./assets/images/home/Vector (11).png" alt="">
+            <h1>Photo Gallery</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+            <a href="#">View More</a>
+          </div>
+          <div class="sec7-slide owl-carousel">
+            <div class="slide-card">
+              <img src="./assets/images/home/michele-blackwell-rAyCBQTH7ws-unsplash 2.png" alt="">
+              <div class="telegram"><a href="https://t.me/NodirbekNumonov2007"><img width="10" src="./assets/images/home/telegram-fill-svgrepo-com.svg" alt=""></a></div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/pexels-prem-pal-singh-tanwar-602750 1.png" alt="">
+              <div class="telegram"><a href="https://t.me/NodirbekNumonov2007"><img width="50" src="./assets/images/home/telegram-fill-svgrepo-com.svg" alt=""></a></div>
+            </div>
+            <div class="slide-card">
+             <img src="./assets/images/home/christian-coquet-p1sdBSnS3Qc-unsplash.png" alt="">
+             <div class="telegram"><a href="https://t.me/NodirbekNumonov2007"><img width="50" src="./assets/images/home/telegram-fill-svgrepo-com.svg" alt=""></a></div>
+           </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/michele-blackwell-rAyCBQTH7ws-unsplash 2.png" alt="">
+              <div class="telegram"><a href="https://t.me/NodirbekNumonov2007"><img width="50" src="./assets/images/home/telegram-fill-svgrepo-com.svg" alt=""></a></div>
+            </div>
+            <div class="slide-card">
+              <img src="./assets/images/home/pexels-prem-pal-singh-tanwar-602750 1.png" alt="">
+              <div class="telegram"><a href="https://t.me/NodirbekNumonov2007"><img width="50" src="./assets/images/home/telegram-fill-svgrepo-com.svg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Nodirbek Nu'monov
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe height="300" src="https://www.youtube.com/embed/bf3O-bwvZ5M" title="Los Angeles in 8K ULTRA HD - Here is The Hollywood (60 FPS)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <section id="footer-1">
+        <div class="container f1-container">
+          <h5>Newsletter</h5>
+          <h1>Subscribe to Our Newsletter</h1>
+          <p>And never miss latest Updates!</p>
+          <div class="inputBox">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <label for="email">Email Address</label>
+          </div>
+          <a href="#">Subscribe</a>
+        </div>
+      </section>
+      <section id="footer-2">
+        <div class="container f2-container">
+          <div class="f2-main row align-items-center">
+            <div class="col-xs-12 col-sm-6 col-xl-4 left mt-3 text-center">
+              <h1>Contact Us</h1>
+              <p>9 W 53rd St, London, NY 10019, UK</p>
+              <p>
+                +1 212-344-1230 <br />
+                +1 212-555-1230
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-xl-4 center text-center">
+              <img src="./assets/images/home/image 2.svg" alt="" />
+              <p>
+                "The best way to find yourself is to lose yourself in the
+                service of others"
+              </p>
+              <div class="f-media">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-xl-4 right text-center">
+              <h1>Working Hours</h1>
+              <p>
+                Monday-Friday: <br />
+                08:00 am -12:00 am
+              </p>
+              <p style="margin-top: 12px">
+                Saturday-Sunday: <br />
+                07:00am -11:00 pm
+              </p>
+            </div>
+          </div>
+          <div class="f2-bottom">
+            <p class="text-center">2022 Pop online. All Rights reserved.</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

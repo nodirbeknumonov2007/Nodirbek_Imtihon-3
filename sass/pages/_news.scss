@@ -1,0 +1,39 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+#section-5.sec-5{
+  padding-bottom: 0;
+}
+.news-1 {
+  padding-right: 20px;
+  padding-left: 20px;
+  .top-title {
+    h1 {
+      color: $text;
+      font-size: 64px;
+    }
+  }
+  .sec5-cards {
+    grid-gap: 40px;
+  }
+  .more {
+    display: flex;
+    justify-content: center;
+    a{
+      display: inline-block;
+      padding: 8px 32px;
+      border: 1px solid #bb2339;
+      border-radius: 100px;
+      color: $black;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 175%;
+      transition: 0.4s;
+      margin-top: 80px;
+      text-align: center;
+      &:hover {
+        color: white;
+        background-color: $primary-red;
+      }
+    }
+  }
+}
