@@ -1,4 +1,8 @@
 
+
+body{
+  overflow-x: hidden !important;
+}
 .menu li .hover {
   position: relative;
   transition: 0.3s;
