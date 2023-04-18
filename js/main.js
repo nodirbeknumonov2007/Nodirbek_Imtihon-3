@@ -92,3 +92,5 @@ function toggleBacktop() {
   }
 }
 
+$("html, body").animate({ scrollTop: $(".myDiv").offset().top }, 300);
+

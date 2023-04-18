@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./sass/components/loader.css">
     <title>Home</title>
   </head>
-  <body>
+  <body id="body">
     <div id="loading">
       <div class="scene">
         <div class="cube-wrapper">
@@ -1102,6 +1102,10 @@
     <script>
       AOS.init();
       AOS.init({
+        disable: function() {
+          var maxWidth = 800;
+          return window.innerWidth < maxWidth;
+        }
       });
     </script>
     <script
